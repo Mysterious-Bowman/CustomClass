@@ -25,17 +25,17 @@ public class VideoGameListing {
    }
    
    
-   public VideoGameListing(String name,String genre,double cost,boolean multiplayer,boolean online,String developer,String publisher,double averagePlayerCount,double rating,int downloads) {
+   public VideoGameListing(String name,String developer,String publisher) {
       this.name = name;
-      this.genre = genre;
-      this.cost = cost;
-      this.multiplayer = multiplayer;
-      this.online = online;
+      genre = "none";
+      cost = 0;
+      multiplayer = false;
+      online = false;
       this.developer = developer;
       this.publisher = publisher;
-      this.averagePlayerCount = averagePlayerCount;
-      this.rating = rating;
-      this.downloads = downloads;
+      averagePlayerCount = 0;
+      rating = 0;
+      downloads = 0;
    }
    
    public void rename(String name) {
